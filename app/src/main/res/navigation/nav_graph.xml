@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/amphibiansListFragment">
+
+    <fragment
+        android:id="@+id/amphibiansListFragment"
+        android:name="com.example.myamphibiansapp.ui.AmphibiansListFragment"
+        android:label="AmphibiansListFragment" >
+        <action
+            android:id="@+id/action_amphibiansListFragment_to_amphibiansDetailFragment"
+            app:destination="@id/amphibiansDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/amphibiansDetailFragment"
+        android:name="com.example.myamphibiansapp.ui.AmphibiansDetailFragment"
+        android:label="AmphibiansDetailFragment" />
+</navigation>
